@@ -1,0 +1,25 @@
+{
+  "name": "service-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+"scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anacarvalhoteixeira-ai/e-learning-service-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anacarvalhoteixeira-ai/e-learning-service-tests/issues"
+  },
+  "homepage": "https://github.com/anacarvalhoteixeira-ai/e-learning-service-tests#readme",
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.5.2"
+  }
+}

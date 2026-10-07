@@ -9,16 +9,14 @@ Projeto acadêmico que implementa e testa as regras de negócio de uma plataform
 
 ## Regras de negócio
 
-Serviço   --   Regra 
-| Matrícula -- A matrícula só é permitida se o aluno tiver concluído todos os pré-requisitos da disciplina. 
+| Serviço | Regra |
+|---|---|
+| Matrícula | A matrícula só é permitida se o aluno tiver concluído todos os pré-requisitos da disciplina. |
+| Turma | A matrícula na turma só é permitida se houver vagas disponíveis. |
+| Trancamento | O trancamento só é permitido em até 30 dias após o início da disciplina. |
+| Certificado | O certificado é emitido apenas para alunos com média igual ou superior a 7. |
 
-| Turma -- A matrícula na turma só é permitida se houver vagas disponíveis. 
-
-| Trancamento -- O trancamento só é permitido em até 30 dias após o início da disciplina. 
-
-| Certificado -- O certificado só é emitido para alunos com média igual ou superior a 7. 
-
-Em todos os serviços, o aluno (e a disciplina ou turma, quando aplicável) precisa existir. Caso contrário, é retornado um erro.
+Em todos os serviços, o aluno (e a disciplina ou a turma, quando aplicável) precisa existir. Caso contrário, é retornado um erro.
 
 ## Estrutura do projeto
 
@@ -28,6 +26,18 @@ src/
 tests/
   factories/        Dados de exemplo para os testes
   *.test.js         Testes de cada serviço
+```
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org) (versão LTS)
+- [Git](https://git-scm.com)
+
+## Como baixar o projeto
+
+```bash
+git clone https://github.com/anacarvalhoteixeira-ai/e-learning-service-tests.git
+cd e-learning-service-tests
 ```
 
 ## Como executar
@@ -49,6 +59,8 @@ Executar os testes com relatório de cobertura:
 ```bash
 npm run test:coverage
 ```
+
+Resultado esperado: 4 suítes e 17 testes aprovados, com 100% de cobertura nos serviços.
 
 ## Organização do trabalho
 

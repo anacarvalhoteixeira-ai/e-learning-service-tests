@@ -10,6 +10,7 @@ Projeto acadêmico que implementa e testa as regras de negócio de uma plataform
 ## Regras de negócio
 
 Serviço   --   Regra 
+
 | Matrícula -- A matrícula só é permitida se o aluno tiver concluído todos os pré-requisitos da disciplina. 
 
 | Turma -- A matrícula na turma só é permitida se houver vagas disponíveis. 
